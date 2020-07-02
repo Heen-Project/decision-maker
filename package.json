@@ -6,12 +6,15 @@
   "scripts": {
     "build-dev": "webpack",
     "build-prod": "webpack -p --env production",
-    "dev-server": "webpack-dev-server"
+    "dev-server": "webpack-dev-server",
+    "start": "node server/server.js",
+    "heroku-postbuild": "npm run build-prod"
   },
   "keywords": [],
   "author": "Wendy",
   "license": "ISC",
   "dependencies": {
+    "express": "^4.17.1",
     "normalize.css": "^8.0.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
